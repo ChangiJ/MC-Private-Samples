@@ -8,7 +8,7 @@ import math  # For mathematical calculations used in matching
 mglu = 1000  # Set gluino mass (GeV)
 
 externalLHEProducer = cms.EDProducer("ExternalLHEProducer",  # Load external LHE events via gridpack
-    args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/RunIII/13p6TeV/slc7_amd64_gcc10/MadGraph5_aMCatNLO/SUSY_SMS/SMS-GlGl/SMS-GlGl_mGl-1000_slc7_amd64_gcc10_CMSSW_12_4_8_tarball.tar.xz' % mglu),
+    args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/RunIII/13p6TeV/slc7_amd64_gcc10/MadGraph5_aMCatNLO/SUSY_SMS/SMS-GlGl/SMS-GlGl_mGl-1000_slc7_amd64_gcc10_CMSSW_12_4_8_tarball.tar.xz'),
     nEvents = cms.untracked.uint32(5000),  # Number of events to generate from the gridpack
     numberOfParameters = cms.uint32(1),  # Only one argument (gridpack path)
     outputFile = cms.string('cmsgrid_final.lhe'),  # Output LHE file name
