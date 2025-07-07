@@ -136,4 +136,3 @@ generator = cms.EDFilter("Pythia8ConcurrentHadronizerFilter",
                                 'JetMatchingParameters')
   ),
   SLHATableForPythia8 = cms.string(baseSLHA)
-)
